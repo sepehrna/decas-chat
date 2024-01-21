@@ -1,0 +1,67 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; /* Dark background */
+  color: #f8f9fa; /* Light text color for contrast */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  width: 80%;
+  max-width: 700px;
+  background-color: #1e1e1e; /* Dark card background */
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  position: relative;
+}
+
+.question-input {
+  flex-grow: 1;
+  padding: 15px;
+  padding-right: 50px; /* Make room for the button */
+  border-radius: 30px;
+  border: 2px solid #333;
+  background-color: #262626; /* Dark input background */
+  color: #f8f9fa; /* Light text color for contrast */
+}
+
+.submit-button {
+  position: absolute;
+  right: 5px; /* Position inside the input */
+  top: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%; /* Circular button */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.submit-button:disabled {
+  background-color: #007bff99;
+}
+
+.answer-box {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #333; /* Dark answer box */
+  border-radius: 15px;
+  border: 1px solid #444;
+}
